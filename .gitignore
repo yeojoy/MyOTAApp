@@ -1,0 +1,6 @@
+bin/
+gen/
+
+AndroidManifest.xml
+src/me/yeojoy/myotaapp/Constants.java
+libs/android-support-v4.jar
