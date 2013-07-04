@@ -30,8 +30,11 @@ public class MainAdapter extends BaseAdapter {
     
     @Override
     public int getCount() {
-        
-        return mAppList.size() == 0 ? 1 : mAppList.size();
+        int count = 1;
+        if (mAppList != null) {
+            count = mAppList.size();
+        }
+        return count;
     }
 
     @Override
@@ -70,7 +73,7 @@ public class MainAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         
-        int resourceId = mAppList.get(position).resouceId; 
+        int resourceId = mAppList.get(position).iconResouceId; 
         String appTitle = mAppList.get(position).appTitle;
         String appDesc = mAppList.get(position).appDesc;
 

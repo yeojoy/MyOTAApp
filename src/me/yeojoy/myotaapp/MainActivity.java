@@ -19,11 +19,12 @@ public class MainActivity extends SherlockFragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         
         mFragmentManager = getSupportFragmentManager();
         Fragment mainFragment = new MainFragment();
         
-        mFragmentManager.beginTransaction().add(mainFragment, "main_fragment").commit();
+        mFragmentManager.beginTransaction().add(R.id.rl_frag_container, mainFragment, "Main_Fragment").commit();
         
     }
     

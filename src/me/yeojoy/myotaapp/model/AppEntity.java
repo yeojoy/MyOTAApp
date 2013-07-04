@@ -7,5 +7,13 @@ public class AppEntity {
     
     public int versionCode = -1;
     
-    public int resouceId = -1;
+    public int iconResouceId = -1;
+    
+    public AppEntity() {}
+    
+    public AppEntity(int iconResourceId, String appTitle, String appDesc) {
+        this.iconResouceId = iconResourceId;
+        this.appTitle = appTitle;
+        this.appDesc = appDesc;
+    }
 }
