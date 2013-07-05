@@ -6,8 +6,12 @@
 
     <!-- Menu -->
     <string name="action_refresh">Refresh</string>
+    <string name="action_conn_dropbox">Connect DropBox</string>
     
     <!-- sample -->
     <string name="app_title">My OTA App</string>
     <string name="app_desc">OTA를 자체적으로 구현한 앱.\nJenkins(ant)와 Dropbox를 사용해서 만든 앱.</string>
+    
+    <!-- button name -->
+    <string name="btn_name_get_list">GET</string>
 </resources>
